@@ -17,7 +17,7 @@ The script does not modify any files.
 
 ## Example
 
-```shell
+```
 $ python localimporter.py --root /home/user/exciting-project
 
 the following sources include standard headers
