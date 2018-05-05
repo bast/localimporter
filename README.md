@@ -20,9 +20,6 @@ The script does not modify any files.
 ```
 $ python localimporter.py --root /home/user/exciting-project
 
-the following sources include standard headers
-before including local headers:
-
 /home/user/exciting-project/src/this.hpp
 /home/user/exciting-project/src/that.h
 /home/user/exciting-project/src/another.cpp
@@ -30,9 +27,6 @@ before including local headers:
 /home/user/exciting-project/src/main.cpp
 
 $ python localimporter.py --root /home/user/exciting-project --suffixes "['hpp']"
-
-the following sources include standard headers
-before including local headers:
 
 /home/user/exciting-project/src/this.hpp
 ```

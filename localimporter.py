@@ -39,13 +39,9 @@ def glob_sources(root, suffixes):
 def main(root, suffixes):
     sources = glob_sources(root, ast.literal_eval(suffixes))
 
-    sources_need_reorder = [s for s in sources if needs_reorder(s)]
-
-    if len(sources_need_reorder) > 0:
-        print('the following sources include standard headers')
-        print('before including local headers:\n')
-        for source in sources_need_reorder:
-            print(source)
+    sources_need_reorder = (s for s in sources if needs_reorder(s))
+    for source in sources_need_reorder:
+        print(source)
 
 
 if __name__ == '__main__':
